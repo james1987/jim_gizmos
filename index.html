@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>JIM KIT</title>
+        <link rel="stylesheet" href="jm/jquery.mobile-1.3.2.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="jm/jquery-1.9.1.min.js"></script>
+        <script src="jm/jquery.mobile-1.3.2.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="main">
+
+            <div data-role="header">
+                <h1>JIM KIT</h1>
+            </div><!-- /header -->
+
+            <div data-role="content">   
+                <div id="hash_handle" data-role="collapsible-set">
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                        <input type="text" data-clear-btn="true" name="hash_str" id="id_will_hash_str" value="">
+                        </div>
+                        <div class="ui-block-b">
+                        <a href="#" id="but_gen_hash" data-role="button" data-inline="true">Generate</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="hash_result">
+                    <div data-role="fieldcontain">
+                        <label id="l_crc32">CRC32:</label>
+                        <label id="v_crc32"></label>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="l_u_md5_16">U:MD5.16:</label>
+                        <label id="v_u_md5_16"></label>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="l_l_md5_16">L:MD5.16:</label>
+                        <label id="v_l_md5_16"></label>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="l_u_md5_32">U:MD5.32:</label>
+                        <label id="v_u_md5_32"></label>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="l_l_md5_32">L:MD5.32:</label>
+                        <label id="v_l_md5_32"></label>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="l_u_sha1">U:SHA1:</label>
+                        <label id="v_u_sha1"></label>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="l_l_sha1">L:SHA1:</label>
+                        <label id="v_l_sha1"></label>
+                    </div>
+                </div>
+            </div><!-- /content -->
+            <input type="hidden" name="current_domain" id="current_domain" value="" />
+            <div data-role="footer">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+    </body>
+</html>
