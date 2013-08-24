@@ -18,13 +18,14 @@
             </div><!-- /header -->
 
             <div data-role="content">   
+                <h1>Hash</h1>
                 <div id="hash_handle" data-role="collapsible-set">
                     <div class="ui-grid-a">
                         <div class="ui-block-a">
                         <input type="text" data-clear-btn="true" name="hash_str" id="id_will_hash_str" value="">
                         </div>
                         <div class="ui-block-b">
-                        <a href="#" id="but_gen_hash" data-role="button" data-inline="true">Generate</a>
+                        <a href="#" id="but_gen_hash" data-role="button" data-inline="true">Hash</a>
                         </div>
                     </div>
                 </div>
@@ -58,6 +59,69 @@
                         <label id="v_l_sha1"></label>
                     </div>
                 </div>
+                <hr />
+                <h1>[En|De]code</h1>
+                <div id="code_handle" data-role="collapsible-set">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                        <input type="text" data-clear-btn="true" name="code_str" id="id_code_str" value="">
+                        </div>
+                        <div class="ui-block-b">
+                        <a href="#" id="but_encode" data-role="button" data-inline="true">[URL|B64]Encode</a>
+                        </div>
+                        <div class="ui-block-c">
+                        <a href="#" id="but_decode" data-role="button" data-inline="true">[URL|B64]Decode</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="code_result">
+                    <div data-role="fieldcontain">
+                        <label id="l_urlencode">Urlencode:</label>
+                        <label id="v_urlencode"></label>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="l_urldecode">Urldecode:</label>
+                        <label id="v_urldecode"></label>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="l_base64en">Base64encode:</label>
+                        <label id="v_base64en"></label>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="l_base64de">Base64decode:</label>
+                        <label id="v_base64de"></label>
+                    </div>
+                </div>
+                <hr />
+                <h1>Crypt</h1>
+                <div id="crypt_handle" data-role="collapsible-set">
+                    <div class="ui-grid-c">
+                        <div class="ui-block-a">
+                            <select name="crypt_method" id="id_crypt_method" data-native-menu="false">
+                                <option value="$1$">MD5</option>
+                                <option value="$2a$">Blowfish</option>
+                                <option value="$5$">SHA-256</option>
+                                <option value="$6$" selected="true">SHA-512</option>
+                            </select>
+                        </div>
+                        <div class="ui-block-b">
+                            <input type="text" data-clear-btn="true" name="salt_str" id="id_salt_str" value="" placeholder="Salt (null = random)" />
+                        </div>
+                        <div class="ui-block-c">
+                            <input type="text" data-clear-btn="true" name="pswd_str" id="id_pswd_str" value="" placeholder="Password" />
+                        </div>
+                        <div class="ui-block-d">
+                        <a href="#" id="but_crypt" data-role="button" data-inline="true">Crypt</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="crypt_result">
+                    <div data-role="fieldcontain">
+                        <label id="l_pswd">Password:</label>
+                        <label id="v_pswd"></label>
+                    </div>
+                </div>
+                <hr />
             </div><!-- /content -->
             <input type="hidden" name="current_domain" id="current_domain" value="" />
             <div data-role="footer">

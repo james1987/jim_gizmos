@@ -3,7 +3,16 @@
     color: #222;
 }
 
-#hash_handle .ui-grid-a .ui-block-a { width: 75% }
+#hash_handle .ui-grid-a .ui-block-a { width: 55% }
 #hash_handle .ui-grid-a .ui-block-b { width: 25% }
+#code_handle .ui-grid-b .ui-block-a { width: 50% }
+#code_handle .ui-grid-b .ui-block-b { width: 15% }
+#code_handle .ui-grid-b .ui-block-c { width: 15% }
+#crypt_handle .ui-grid-c .ui-block-a { width: 15% }
+#crypt_handle .ui-grid-c .ui-block-b { width: 15% }
+#crypt_handle .ui-grid-c .ui-block-c { width: 15% }
+#crypt_handle .ui-grid-c .ui-block-d { width: 15% }
 
 #hash_result div label { padding: 10px; }
+#code_result div label { padding: 10px; }
+#crypt_result div label { padding: 10px; }
